@@ -6,9 +6,9 @@ def get_project_root() -> Path:
   """Returns project root folder."""
   return Path(__file__).parents[1]
 
-def config(config_db):
+def config(config_db, section_to_parse):
   print("in config")  
-  section = 'postgresql'
+  section = section_to_parse #'postgresql'
   config_file_path = config_db
   if(len(config_file_path) > 0 and len(section) > 0):
     print("first if ", config_file_path )  
