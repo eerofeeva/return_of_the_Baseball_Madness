@@ -7,18 +7,15 @@ def get_project_root() -> Path:
   return Path(__file__).parents[1]
 
 def config(config_db, section_to_parse):
-  print("in config")  
-  section = section_to_parse #'postgresql'
+  section = section_to_parse 
   config_file_path = config_db
   if(len(config_file_path) > 0 and len(section) > 0):
-    print("first if ", config_file_path )  
     # Create an instance of ConfigParser class
     config_parser = ConfigParser()
     # Read the configuration file
     config_parser.read(config_file_path)
     # If the configuration file contains the provided section name
     if(config_parser.has_section(section)):
-      print("second if")  
       # Read the options of the section
       config_params = config_parser.items(section)
       # Convert the list object to a python dictionary object

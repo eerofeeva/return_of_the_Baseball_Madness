@@ -1,5 +1,14 @@
 2013-2015 Baseball playoff appearances vs. Concession prices
 
+List of code files:
+_CODE/database.ini - contains SQL queries to run against PostGres Server
+_CODE/config.py - contains method for connecting to DB and running SQL queries against it
+_CODE/conn_engine.ipynb - contains engine for running DB queries 
+
+Baseball Project 2.ipynb -  old baseball performance research project and data cleanup
+Kylie_Graphs.ipynb - new graphs
+Resources/attendance_graph.ipynb - more new graphs!
+
 • We hypothesize that teams who win a lot and have bigger stadiums/are in larger metro areas will have lower cost of food and drink in their stadiums. Teams with few wins, smaller stadiums, and smaller metro areas will have higher prices.
 
 	o Teams that made it to the playoffs in 2013-2015:
